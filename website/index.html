@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP Static Website with Cloud CDN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Google Cloud Static Website</h1>
+    <p>Cloud Storage • HTTPS Load Balancer • Cloud CDN • Terraform</p>
+
+    <a class="button" href="https://github.com/YOUR_USERNAME/gcp-static-website">
+        View on GitHub
+    </a>
+</header>
+
+<section class="hero">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        This project demonstrates how to deploy a highly available static website
+        on Google Cloud using Cloud Storage as the origin,
+        an HTTPS Load Balancer, and Cloud CDN for global content delivery.
+    </p>
+
+</section>
+
+<section>
+
+<h2>Architecture</h2>
+
+<div class="card">
+
+<pre>
+Internet
+    │
+Cloud DNS
+    │
+HTTPS
+    │
+Cloud CDN
+    │
+HTTPS Load Balancer
+    │
+Backend Bucket
+    │
+Cloud Storage
+</pre>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Cloud Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Cloud Storage</h3>
+<p>Hosts HTML, CSS, JavaScript and images.</p>
+</div>
+
+<div class="card">
+<h3>Cloud CDN</h3>
+<p>Caches content at Google's edge locations.</p>
+</div>
+
+<div class="card">
+<h3>HTTPS Load Balancer</h3>
+<p>Global entry point with SSL termination.</p>
+</div>
+
+<div class="card">
+<h3>Certificate Manager</h3>
+<p>Automatic TLS certificate provisioning.</p>
+</div>
+
+<div class="card">
+<h3>Cloud DNS</h3>
+<p>Maps the domain name to the load balancer.</p>
+</div>
+
+<div class="card">
+<h3>Terraform</h3>
+<p>Infrastructure as Code for reproducible deployments.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Features</h2>
+
+<ul>
+<li>Static website hosting</li>
+<li>HTTPS enabled</li>
+<li>Global CDN caching</li>
+<li>Infrastructure as Code</li>
+<li>Low-cost architecture</li>
+<li>Highly scalable</li>
+<li>Production-inspired design</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Deployment Workflow</h2>
+
+<div class="card">
+
+<ol>
+<li>Create Cloud Storage bucket</li>
+<li>Upload website files</li>
+<li>Create Backend Bucket</li>
+<li>Configure HTTPS Load Balancer</li>
+<li>Enable Cloud CDN</li>
+<li>Create Managed SSL Certificate</li>
+<li>Deploy with Terraform</li>
+</ol>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+Created by <strong>Adam Sbane</strong><br>
+Physical Design Engineer | Cloud & Infrastructure Enthusiast
+</p>
+
+</footer>
+
+</body>
+</html>
